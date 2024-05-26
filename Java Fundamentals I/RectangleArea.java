@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class RectangleAreaInput {
+public class RectangleArea {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -10,7 +10,7 @@ public class RectangleAreaInput {
         System.out.print("Enter the width of the rectangle: ");
         double width = input.nextDouble();
         double area = length * width;
-        System.out.printf("The area of the rectangle is: %.2f", area);
+        System.out.printf("The area of the rectangle is: " + area);
     }
 }
 
