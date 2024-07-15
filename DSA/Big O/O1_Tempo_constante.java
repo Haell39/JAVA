@@ -1,4 +1,6 @@
-public class BigONotation {
+//* Este método imprime o primeiro item em um array:
+
+public class O1_Tempo_constante {
 
     public static void printFirstItem(int[] array) {
         System.out.println(array[0]);
