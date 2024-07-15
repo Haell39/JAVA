@@ -1,8 +1,9 @@
+package DSA.Listas_Lincadas;
+
 public class LinkedList {
     private Node head;
     private Node tail;
 
-    // Define a classe Node
     private class Node {
         int value;
         Node next;
@@ -12,7 +13,6 @@ public class LinkedList {
         }
     }
 
-    // Adiciona um novo nó ao final da lista
     public void addLast(int value) {
         Node newNode = new Node(value);
         if (head == null) {
@@ -24,7 +24,6 @@ public class LinkedList {
         }
     }
 
-    // Remove o primeiro nó da lista
     public void removeFirst() {
         if (head == null) throw new IllegalStateException("List is empty");
         if (head == tail) {
@@ -35,7 +34,6 @@ public class LinkedList {
         }
     }
 
-    // Verifica se a lista contém um determinado valor
     public boolean contains(int value) {
         Node current = head;
         while (current != null) {
@@ -45,7 +43,6 @@ public class LinkedList {
         return false;
     }
 
-    // Imprime todos os nós da lista
     public void print() {
         Node current = head;
         while (current != null) {
