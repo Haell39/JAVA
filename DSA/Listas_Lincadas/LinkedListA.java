@@ -1,6 +1,6 @@
 package DSA.Listas_Lincadas;
 
-public class LinkedList {
+public class LinkedListA{
     private Node head; // Ponteiro para o primeiro nó da lista
     private Node tail; // Ponteiro para o último nó da lista
 
@@ -59,7 +59,7 @@ public class LinkedList {
 
     // Método principal para testar a lista ligada
     public static void main(String[] args) {
-        LinkedList list = new LinkedList(); // Cria uma nova lista ligada
+        LinkedListA list = new LinkedListA(); // Cria uma nova lista ligada
         list.addLast(10); // Adiciona 10 ao final da lista
         list.addLast(20); // Adiciona 20 ao final da lista
         list.addLast(30); // Adiciona 30 ao final da lista

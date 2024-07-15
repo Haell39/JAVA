@@ -27,6 +27,10 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
+
+
+
+        
         int[] numbers = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};  // Array ordenado
         int target = 70;                                       // Valor a ser buscado
 
@@ -34,3 +38,5 @@ public class BinarySearch {
         System.out.println("Index of " + target + ": " + index); // Imprime o resultado
     }
 }
+
+
