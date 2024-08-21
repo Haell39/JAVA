@@ -164,6 +164,24 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
         }
 
         //Score
+
+
+        //Restarting the game when uses dies if space bar is pressed:
+        if (bird.y > boardheight) {
+            gameOver = true;
+            gameloop.stop();
+            placePipesTimer.stop();
+            JOptionPane.showMessageDialog(this, "Game Over! Your score is " + (int)score + " Press space to restart");
+            score = 0;
+            bird.y = boardheight / 2;
+            velocityY = 0;
+            bird.x = boardwidth / 8;
+            pipes.clear();
+            gameloop.start();
+            placePipesTimer.start();
+        }
+
+        
         
 
 
