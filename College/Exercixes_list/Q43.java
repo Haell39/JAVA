@@ -16,3 +16,4 @@ public class Q43 {
         System.out.println("Total de grãos de trigo a serem recebidos: " + totalGraos);
     }
 }
+
