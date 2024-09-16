@@ -1,30 +1,31 @@
-package College.Exercixes_list;
-import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Q32 {
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Digite um numero: ");
-        BigInteger numInicial = scanner.nextBigInteger();
+        System.out.print("Digite um numero entre 0 e 10(Ou seja de 1 a 9): ");
+        int num = scanner.nextInt();
 
-        BigInteger soma = BigInteger.ZERO;
-        int count = 0;
-        BigInteger numAtual = numInicial;
-
-        if (numAtual.mod(BigInteger.valueOf(2)).equals(BigInteger.ZERO)) {
-            numAtual = numAtual.add(BigInteger.ONE);
+        if (num <= 0 || num >= 10){
+            System.out.println("Por favor, digite um número valido(1,2,3,4,5,6,7,8,9)");
         }
-        while (count < 20){
-            soma = soma.add(numAtual.multiply(numAtual));
+            return;
+    }
 
-            numAtual = numAtual.add(BigInteger.valueOf(2));
-            count++;
-        }
-        System.out.println("A soma dos quadrados dos 20 primeiros números ímpares a partir de " + numInicial + " é: " + soma);
+    int sum = 0;
+    int count = 0;
+    int valorAtual = num;
 
-        scanner.close();
+    while (count < 20) {
+        if (valorAtual % 2 != 0) {
+            sum += valorAtual * valorAtual;
+            count ++;
         }
+        valorAtual++;
+    }
+
+    System.out.println("A soma dos quadrados dos 20 primeiros números ímpares a partir de " + num + " é: " + sum);
+
+    scanner.close();
+    }
 }
-
