@@ -1,5 +1,4 @@
-package College.Exercixes_list;
-
+package College.PO;
 public class Q26 {
 
     //Exibir números de 1 a 100 em ordem decrescente

@@ -1,4 +1,3 @@
-package College.Exercixes_list;
 import java.math.BigInteger; // Import BigInteger class
 
 // Programa que calcula o número de grãos de trigo em um tabuleiro de xadrez
